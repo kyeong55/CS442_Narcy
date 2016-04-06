@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="@dimen/forecast_width"
+    android:layout_height="match_parent"
+    android:id="@+id/forecast_elem_layout">
+    <TextView
+        android:id="@+id/forecast_elem_time"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/forecast_margin_bottom"
+
+        android:textColor="@color/colorTextDetail"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/forecast_elem_icon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingRight="@dimen/forecast_padding_side"
+        android:paddingLeft="@dimen/forecast_padding_side" />
+    <TextView
+        android:id="@+id/forecast_elem_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorTextDetail"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/forecast_margin_bottom">
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/ic_precip"
+            android:layout_gravity="center_vertical"
+            android:tint="@color/colorTextDetail"/>
+        <TextView
+            android:id="@+id/forecast_elem_precip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorTextDetail"
+            />
+    </LinearLayout>
+
+</LinearLayout>
