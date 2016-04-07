@@ -17,7 +17,6 @@ import java.util.List;
  */
 public class HourlyForecastAdapter extends RecyclerView.Adapter<HourlyForecastAdapter.ViewHolder>{
     private Context context;
-//
     private List<Weather> items;
 
     public HourlyForecastAdapter(Context context){
